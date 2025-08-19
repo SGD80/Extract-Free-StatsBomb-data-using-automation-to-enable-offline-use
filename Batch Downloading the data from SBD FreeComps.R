@@ -59,7 +59,7 @@ for (i in seq_len(nrow(data_index))) {
     StatsBombData <- cleanlocations(StatsBombData)
     
     # Save data
-    save_path <- paste0("  Enter your own local location here - for CSV file end - .csv   ", 
+    save_path <- paste0("  Enter your own local location here - for .RData   ", 
                         country, "_", competition, "_", year, ".RData")
     save(StatsBombData, file = save_path)
     
@@ -77,3 +77,4 @@ for (i in seq_len(nrow(data_index))) {
   gc()
   Sys.sleep(3)
 }
+
